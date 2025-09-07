@@ -129,7 +129,7 @@ class MainController
         // Intervention Image v3 (GD)
         $manager = new \Intervention\Image\ImageManager(new \Intervention\Image\Drivers\Gd\Driver());
         $manager->read($tmp)
-            ->scale(450, 450, function ($c) { $c->keepAspectRatio(); $c->preventUpsizing(); })
+            ->scale(800, 800, function ($c) { $c->keepAspectRatio(); $c->preventUpsizing(); })
             ->toJpeg(80)
             ->save($destFs);
 
