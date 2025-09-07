@@ -1,0 +1,9 @@
+/vendor/
+/public/assets/uploads/*
+!/public/assets/uploads/.gitkeep
+/.env
+/composer.phar
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
