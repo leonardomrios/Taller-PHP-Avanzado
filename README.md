@@ -18,13 +18,10 @@ Aplicación de ejemplo en **PHP 8+** con arquitectura **MVC** y **autoload PSR�
 3. [Instalación](#instalación)
 4. [Configuración de entorno (.env)](#configuración-de-entorno-env)
 5. [Ejecución](#ejecución)
-6. [Uso rápido](#uso-rápido)
-7. [Capturas de pantalla](#capturas-de-pantalla)
-8. [Correo de prueba con Mailtrap](#correo-de-prueba-con-mailtrap)
-9. [Notas y buenas prácticas](#notas-y-buenas-prácticas)
-10. [Solución de problemas](#solución-de-problemas)
-11. [Extensiones y tareas sugeridas](#extensiones-y-tareas-sugeridas)
-12. [Licencia](#licencia)
+6. [Capturas de pantalla](#capturas-de-pantalla)
+7. [Correo de prueba con Mailtrap](#correo-de-prueba-con-mailtrap)
+8. [Notas y buenas prácticas](#notas-y-buenas-prácticas)
+9. [Solución de problemas](#solución-de-problemas)
 
 ---
 
@@ -115,7 +112,7 @@ Opción B (Apache/XAMPP): configura **DocumentRoot** a `.../public` o crea un Vi
 
 Abre [http://localhost:8000](http://localhost:8000).
 
-
+## Capturas de pantalla
 
 * **Home / Formularios**
   ![Home](docs/images/home.png)
