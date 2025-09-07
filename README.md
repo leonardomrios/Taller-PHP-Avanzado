@@ -68,7 +68,7 @@ Aplicación de ejemplo en **PHP 8+** con arquitectura **MVC** y **autoload PSR�
 1. Clonar el repositorio y entrar al directorio:
 
    ```bash
-   git clone [https://github.com/tu-usuario/app-empresa-ventas.git](https://github.com/leonardomrios/Taller-PHP-Avanzado)
+   git clone https://github.com/leonardomrios/Taller-PHP-Avanzado
    cd app-empresa-ventas
    ```
 2. Instalar dependencias:
@@ -77,11 +77,11 @@ Aplicación de ejemplo en **PHP 8+** con arquitectura **MVC** y **autoload PSR�
    composer install
    ```
 
-> Si trabajas en Windows/XAMPP, asegúrate de tener habilitado `extension=openssl` y `extension=gd` en tu `php.ini`. Reinicia Apache/tu terminal si realizas cambios.
+> Si se trabaja en Windows/XAMPP, asegurarse de tener habilitado `extension=openssl` y `extension=gd` en tu `php.ini`. Reiniciar Apache/o la terminal si se realizan cambios.
 
 ## Configuración de entorno (.env)
 
-Este proyecto utiliza variables de entorno para no exponer secretos. Proporcionamos un **`.env.example`**.
+Este proyecto utiliza variables de entorno para no exponer secretos. Se proporciona un **`.env.example`**.
 
 1. Copia el archivo de ejemplo:
 
@@ -101,7 +101,7 @@ Este proyecto utiliza variables de entorno para no exponer secretos. Proporciona
    UPLOAD_DIR="./public/assets/uploads"
    ```
 
-> Si prefieres, también puedes definir `SMTP_DSN`/`MAILER_DSN` como **variable de entorno del sistema** en lugar de usar `.env`.
+> También puedes definir `SMTP_DSN`/`MAILER_DSN` como **variable de entorno del sistema** en lugar de usar `.env`.
 
 ## Ejecución
 
@@ -116,28 +116,6 @@ Opción B (Apache/XAMPP): configura **DocumentRoot** a `.../public` o crea un Vi
 Abre [http://localhost:8000](http://localhost:8000).
 
 
-### JSON de ejemplo (Empleados)
-
-```json
-[
-  {"name":"Ana","salary":4500000,"department":"TI"},
-  {"name":"Luis","salary":3800000,"department":"TI"},
-  {"name":"Marta","salary":5200000,"department":"Ventas"},
-  {"name":"Sofía","salary":5100000,"department":"Ventas"},
-  {"name":"Pedro","salary":3000000,"department":"Ops"}
-]
-```
-
-### JSON de ejemplo (Ventas)
-
-```json
-[
-  {"id":"V001","client":"Acme","product":"Teclado","qty":3,"unit_price":80000,"date":"2025-08-01"},
-  {"id":"V002","client":"Acme","product":"Mouse","qty":5,"unit_price":40000,"date":"2025-08-02"},
-  {"id":"V003","client":"Globex","product":"Teclado","qty":7,"unit_price":79000,"date":"2025-08-03"},
-  {"id":"V004","client":"Initech","product":"Monitor","qty":2,"unit_price":600000,"date":"2025-08-05"}
-]
-```
 
 * **Home / Formularios**
   ![Home](docs/images/home.png)
@@ -171,7 +149,7 @@ Abre [http://localhost:8000](http://localhost:8000).
 * **PSR‑4**: Autoload definido en `composer.json` con namespace `App\\` mapeado a `src/`.
 * **Seguridad al subir archivos**: se sanea el nombre y se publica bajo `public/assets/uploads/`.
 * **Intervention Image v3**: usa driver **GD** y evita agrandar imágenes (`keepAspectRatio`, `preventUpsizing`).
-* **Salario neto (CO)**: el cálculo es **simplificado** (4% salud + 4% pensión). Puedes expandirlo con retención y fondos.
+* **Salario neto (CO)**: el cálculo es **simplificado** (4% salud + 4% pensión).
 * **Rutas Windows**: se generan URLs públicas relativas (`/assets/uploads/...`) evitando `file:///C:/...`.
 
 ## Solución de problemas
